@@ -22,6 +22,7 @@ resource "google_compute_firewall" "allow-http" {
   network = "${local.network}"
   project = "${var.project}"
 
+  
   allow {
     protocol = "tcp"
     ports    = ["80"]
